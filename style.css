@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    font-family: Vanguard CF;
+
+}
+
+#main{
+    width: 100%;
+    min-height: 100%;
+    background-color: #f8f8f8;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px;
+    width: 100%;
+}
+
+#nav i{
+    position: fixed;
+    font-size: 25px;
+    color: black;
+    right: 3%;
+    /* border: 1px solid black;
+    border-radius: 50%; */
+}
+
+#mainheading{
+    position: relative;
+    width: 100%;
+    padding: 20px 75px;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+#svg{
+    position: fixed;
+    right: 0%;
+    top: 37%;
+}
+
+#txt{
+    margin-left: 83%;
+    margin-top: -3%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5px;
+    color: grey;
+}
+
+#sections{
+    margin-top: 40px;
+    width: 100%;
+
+}
+
+#section{
+    display: flex;
+    justify-content: flex-end;
+    padding: 70px 70px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#section:nth-child(2n){
+    justify-content: flex-start;
+}
+
+#insider{
+    width: 55%;
+    height: 65vh;
+}
+
+#header{
+    width: 100%;
+    height: 55vh;
+
+}
+
+#header img{
+    height: 100%;
+    width: 100%;
+}
+
+#footer{
+    width: 100%;
+    height: 10vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#footer2{
+    margin-top: 100px;
+    font-size: 40px;
+    padding: 50px 90px;
+}
+
+#circle{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8px;
+    letter-spacing: 2px;
+    border-radius: 50%;
+    /* margin-left: 90px; */
+    transform: translate(60%,0%);
+    justify-content: center;
+    transition: all 0.2s ease-out ;
+    align-items: center;
+}
+
+#nav2{
+    margin-top: 160px;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 90px;
+    color: black;
+}
+
+#smcircle{
+    pointer-events: none;
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+    z-index: 1;
+}
+
+#cursor{
+    position: fixed;
+    display: none;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    background-color: transparent;
+}
+
+#arrow{
+    position: absolute;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+#arrow-overlay{
+    background-color: white;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#wheel{
+    height: 120px;
+    /* fill: white; */
+    animation: an 5s linear infinite both;
+} 
+
+@keyframes an {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
